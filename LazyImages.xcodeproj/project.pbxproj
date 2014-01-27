@@ -21,6 +21,8 @@
 		749A50F11896D6C4006ABECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749A50D31896D6C4006ABECC /* UIKit.framework */; };
 		749A50F91896D6C4006ABECC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 749A50F71896D6C4006ABECC /* InfoPlist.strings */; };
 		749A50FB1896D6C4006ABECC /* LazyImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A50FA1896D6C4006ABECC /* LazyImagesTests.m */; };
+		749A51061896D8E1006ABECC /* AppRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 749A51051896D8E1006ABECC /* AppRecord.m */; };
+		87B266700CC448548191D5C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D865679B62DD4D2F8E03A16B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		749A50F61896D6C4006ABECC /* LazyImagesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LazyImagesTests-Info.plist"; sourceTree = "<group>"; };
 		749A50F81896D6C4006ABECC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		749A50FA1896D6C4006ABECC /* LazyImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyImagesTests.m; sourceTree = "<group>"; };
+		749A51041896D8E1006ABECC /* AppRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRecord.h; sourceTree = "<group>"; };
+		749A51051896D8E1006ABECC /* AppRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRecord.m; sourceTree = "<group>"; };
+		D865679B62DD4D2F8E03A16B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF0D2795B584724A525FB86 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				749A50D21896D6C4006ABECC /* CoreGraphics.framework in Frameworks */,
 				749A50D41896D6C4006ABECC /* UIKit.framework in Frameworks */,
 				749A50D01896D6C4006ABECC /* Foundation.framework in Frameworks */,
+				87B266700CC448548191D5C6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 				749A50F41896D6C4006ABECC /* LazyImagesTests */,
 				749A50CE1896D6C4006ABECC /* Frameworks */,
 				749A50CD1896D6C4006ABECC /* Products */,
+				EBF0D2795B584724A525FB86 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +113,7 @@
 				749A50D11896D6C4006ABECC /* CoreGraphics.framework */,
 				749A50D31896D6C4006ABECC /* UIKit.framework */,
 				749A50EE1896D6C4006ABECC /* XCTest.framework */,
+				D865679B62DD4D2F8E03A16B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +128,8 @@
 				749A50E51896D6C4006ABECC /* ViewController.m */,
 				749A50E71896D6C4006ABECC /* Images.xcassets */,
 				749A50D61896D6C4006ABECC /* Supporting Files */,
+				749A51041896D8E1006ABECC /* AppRecord.h */,
+				749A51051896D8E1006ABECC /* AppRecord.m */,
 			);
 			path = LazyImages;
 			sourceTree = "<group>";
@@ -159,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 749A50FE1896D6C4006ABECC /* Build configuration list for PBXNativeTarget "LazyImages" */;
 			buildPhases = (
+				4DD93FF3BBF14E6886E601BF /* Check Pods Manifest.lock */,
 				749A50C81896D6C4006ABECC /* Sources */,
 				749A50C91896D6C4006ABECC /* Frameworks */,
 				749A50CA1896D6C4006ABECC /* Resources */,
+				1A40ABDC9DFF4398B83B4D3F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +257,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A40ABDC9DFF4398B83B4D3F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD93FF3BBF14E6886E601BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		749A50C81896D6C4006ABECC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,6 +297,7 @@
 			files = (
 				749A50E61896D6C4006ABECC /* ViewController.m in Sources */,
 				749A50E01896D6C4006ABECC /* AppDelegate.m in Sources */,
+				749A51061896D8E1006ABECC /* AppRecord.m in Sources */,
 				749A50DC1896D6C4006ABECC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +422,7 @@
 		};
 		749A50FF1896D6C4006ABECC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF0D2795B584724A525FB86 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +436,7 @@
 		};
 		749A51001896D6C4006ABECC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF0D2795B584724A525FB86 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -460,6 +509,7 @@
 				749A51001896D6C4006ABECC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		749A51011896D6C4006ABECC /* Build configuration list for PBXNativeTarget "LazyImagesTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +518,7 @@
 				749A51031896D6C4006ABECC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
